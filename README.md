@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261122/crisdion3006/news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122)
 [![reward](https://make.fun/badge/news-image-20261122/crisdion3006/news-image-20261122/reward.svg)](https://make.fun/bounty/news-image-20261122)
 
-A one-page newspaper front page summing up the world's news of Sunday
+A full-bleed dark poster summing up the world's news of Sunday
 22 November 2026, built for the [make.fun](https://make.fun) bounty
 "Sum up 22 November's world news in one image".
 
@@ -28,9 +28,11 @@ Every story was verified from reports published on 22 November 2026.
 
 ## How it is built
 
-`build_image.py` draws the whole front page with Pillow (PIL): masthead,
-night-sky hero with skyline and missile bursts, four story cards and the
-also-today strip. It writes `entry.png` (1024×1024, under 1 MiB).
+`build_image.py` draws the whole poster with Pillow (PIL): a giant gold
+"110" hero number with diagonal missile trails, the headline
+"RUSSIA'S BIGGEST ATTACK YET", four full-width colour bands for the
+other stories, and a ticker footer. It writes `entry.png` (1024×1024,
+under 1 MiB).
 
 ```sh
 python3 build_image.py   # writes entry.png
